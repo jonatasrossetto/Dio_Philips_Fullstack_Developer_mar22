@@ -15,5 +15,17 @@
 
 .parceiros{
     background-color: rgb(42, 95, 77);
-    color: black;
+    color: white;
+}
+
+.servicos{
+    background-color: rgb(53, 46, 59);
+    color:  white;
+}
+
+.bg-footer{
+    padding-top: 10px;
+    padding-bottom: 10;
+    background-color: black;
+    color:white;
 }
