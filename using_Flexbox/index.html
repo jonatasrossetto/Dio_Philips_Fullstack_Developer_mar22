@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS FlexBox</title>
+    <style>
+    {
+        .flex{
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+            list-style: none;
+        }
+
+        .flex1{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            list-style: none;
+            max-width: 500px;
+        } -->
+
+        <!-- .item{
+            background-color: aqua;
+            margin: 5px;
+        }
+        .item1{
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color:white;
+            text-align: center;
+            margin: 5px;
+        }
+        .row{
+            flex-direction: row;
+        }
+
+        .row-reverse{
+            flex-direction: row-reverse ;
+        }
+
+        .row-reverse li{
+            background-color: red;
+        }
+
+        .column{
+            float: left;
+            flex-direction: column;
+        }
+
+        .column li{
+            background-color: orangered;
+        }
+
+        .column-reverse{
+            float: right;
+            flex-direction: column-reverse;
+        }
+
+        .column-reverse li{
+            background-color: purple;
+        } -->
+
+
+        <!-- .flex2{
+            display: flex;
+            height:150px;
+            max-width: 300px;
+            border: 2px solid black;
+            flex-direction: column;
+        }
+        .item2{
+            font-size: 24px;
+            height:50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .wrapreverse {
+            flex-wrap: wrap-reverse;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+    
+
+    /* .container{
+        max-width: 400px;
+        border: 1px solid black;
+        margin: 1%;
+        display: flex;
+        height: 200px;
+    }
+    .item{
+        background-color: blueviolet;
+        margin: 10px;
+        width: 50px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 0px;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        line-height: 40px;
+    }
+    .flex-start{
+        justify-content: flex-start;
+    }
+    .flex-end{
+        justify-content: flex-end;
+    }
+    .center{
+        justify-content: center;
+    }
+    .space-between{
+        justify-content: space-between;
+    }
+    .space-around{
+        justify-content: space-around;
+    }
+    .column{
+        flex-direction: column;
+    } */
+    }
+    .container{
+        max-width: 350px;
+        border: 1px solid black;
+        display: flex;
+    }
+
+    .item{
+        background-color: blueviolet;
+        margin: 5px;
+        color: white;
+        text-align: center;
+        flex: 1;
+    }
+    .center{
+        align-items: center;
+    }
+    .stretch{
+        align-items: stretch;
+    }
+    .flex-start{
+        align-items: flex-start;
+    }
+    .flex-end{
+        align-items: flex-end;
+    }
+    .baseline{
+        align-items: baseline;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .central{
+        height: 300px;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .central .item{
+        flex: 0;
+        padding: 20px;
+    }
+   
+    </style>
+</head>
+<body>
+    <!-- <div class="flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>   </p>
+    <div>
+        <ul class="flex1 row">
+            <li class="item1">1</li>
+            <li class="item1">2</li>
+            <li class="item1">3</li>
+            <li class="item1">4</li>
+            <li class="item1">5</li>
+        </ul>
+        <ul class="flex1 row-reverse">
+            <li class="item1">1</li>
+            <li class="item1">2</li>
+            <li class="item1">3</li>
+            <li class="item1">4</li>
+            <li class="item1">5</li>
+        </ul>
+        <ul class="flex1 column">
+            <li class="item1">1</li>
+            <li class="item1">2</li>
+            <li class="item1">3</li>
+            <li class="item1">4</li>
+            <li class="item1">5</li>
+        </ul>
+        <ul class="flex1 column-reverse">
+            <li class="item1">1</li>
+            <li class="item1">2</li>
+            <li class="item1">3</li>
+            <li class="item1">4</li>
+            <li class="item1">5</li>
+        </ul>
+    </div> -->
+
+    <!-- <h2>No wrap</h2>
+    <div class="flex2 nowrap">
+        <div class="item2 blue">Item 1</div>
+        <div class="item2 red">Item 2</div>
+        <div class="item2 green">Item 3</div>
+        <div class="item2 green">Item 4</div>
+      
+    </div>
+
+    <h2>Wrap</h2>
+    <div class="flex2 wrap">
+        <div class="item2 blue">Item 1</div>
+        <div class="item2 red">Item 2</div>
+        <div class="item2 green">Item 3</div>
+        <div class="item2 green">Item 4</div>
+        
+    </div>
+    
+    <h2>Wrap Reverse</h2>
+    <div class="flex2 wrapreverse">
+        <div class="item2 blue">Item 1</div>
+        <div class="item2 red">Item 2</div>
+        <div class="item2 green">Item 3</div>
+        <div class="item2 green">Item 4</div>
+        
+    </div> -->
+    <!-- <p>Flex Start</p>
+    <section class="container flex-start">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+
+    <section class="container flex-end">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+
+    <section class="container center">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+
+    <section class="container space-between">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+
+    <section class="container space-around">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+<h2>Columun</h2>
+    <section class="container flex-start column">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+    <section class="container flex-end column">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+    <section class="container center column">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+    <section class="container space-between column">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section>
+    <section class="container space-around column">
+        <div class="item"> item 1 </div>
+        <div class="item"> item 2 </div>
+        <div class="item"> item 3 </div>
+    </section> -->
+    <h2>Row</h2>
+    <p>Center</p>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem velit et aliquid aliquam necessitatibus laborum ut! Nostrum, maiores molestias quod dolorem, dicta commodi cum est culpa consectetur ex deserunt nobis?</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <p>Stretch</p>
+    <section class="container center stretch ">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit officiis aspernatur consectetur beatae! Nisi, eum vero aliquid in, facilis asperiores, harum ipsum minus ullam dolorum repellat corrupti modi nemo.</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <p>flex-start</p>
+    <section class="container center flex-start ">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit officiis aspernatur consectetur beatae! Nisi, eum vero aliquid in, facilis asperiores, harum ipsum minus ullam dolorum repellat corrupti modi nemo.</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <p>flex-end</p>
+    <section class="container center flex-end ">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit officiis aspernatur consectetur beatae! Nisi, eum vero aliquid in, facilis asperiores, harum ipsum minus ullam dolorum repellat corrupti modi nemo.</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <p>baseline</p>
+    <section class="container center baseline ">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit officiis aspernatur consectetur beatae! Nisi, eum vero aliquid in, facilis asperiores, harum ipsum minus ullam dolorum repellat corrupti modi nemo.</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <h2>column</h2>
+    <p>start</p>
+    <section class="container flex-start column ">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit officiis aspernatur consectetur beatae! Nisi, eum vero aliquid in, facilis asperiores, harum ipsum minus ullam dolorum repellat corrupti modi nemo.</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <p>end</p>
+    <section class="container flex-end column ">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit officiis aspernatur consectetur beatae! Nisi, eum vero aliquid in, facilis asperiores, harum ipsum minus ullam dolorum repellat corrupti modi nemo.</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <p>center</p>
+    <section class="container center column ">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit officiis aspernatur consectetur beatae! Nisi, eum vero aliquid in, facilis asperiores, harum ipsum minus ullam dolorum repellat corrupti modi nemo.</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <p>baseline</p>
+    <section class="container baseline column ">
+        <div class="item"><br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit odit officiis aspernatur consectetur beatae! Nisi, eum vero aliquid in, facilis asperiores, harum ipsum minus ullam dolorum repellat corrupti modi nemo.</div>
+        <div class="item">item 3 mais algum texto para parecer sério</div>
+    </section>
+    <p>alinhamento central</p>
+    <section class="container central center">
+    <div class="item">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    </div>
+</section>
+
+
+</body>
+</html>

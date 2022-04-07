@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+</head>
+<style>
+    .container{
+        height: 400px;
+        max-width: 300px;
+        /* margin: 0 auto; */
+        display: flex;
+        flex-wrap: wrap; 
+        border: 2px solid black;
+    }
+    .item{
+        background-color: orangered;
+        padding: 0 5px;
+        flex: 1;
+        text-align: center;
+        color: white;
+        margin: 5px;
+    }
+    .stretch{
+        align-content: stretch;
+    }
+    .center{
+        align-content: center;
+    }
+    .start{
+        align-content: flex-start;
+    }
+    .around{
+        align-content: space-around;
+    }
+    .between{
+        align-content: space-between;
+    }
+</style>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor.</div>
+        <div class="item">Lorem ipsum dolor Rerum aliquid tenetur ipsam id praesentium voluptates </div>
+        <div class="item">Lorem, ipsum Perspiciatis obcaecati alias quia distinctio quis</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing </div>
+        <div class="item"> <div class="item">dolor sit amet consectetur adipisicing elit</div></div>
+        <div class="item">item6</div>
+        <div class="item">dolor sit amet consectetur adipisicing elit</div>
+    </div>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor.</div>
+        <div class="item">Lorem ipsum dolor Rerum aliquid tenetur ipsam id praesentium voluptates </div>
+        <div class="item">Lorem, ipsum Perspiciatis obcaecati alias quia distinctio quis</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing </div>
+        <div class="item"> <div class="item">dolor sit amet consectetur adipisicing elit</div></div>
+        <div class="item">item6</div>
+        <div class="item">dolor sit amet consectetur adipisicing elit</div>
+    </div>
+    <p>Start</p>
+    <div class="container start">
+        <div class="item">Lorem ipsum dolor.</div>
+        <div class="item">Lorem ipsum dolor Rerum aliquid tenetur ipsam id praesentium voluptates </div>
+        <div class="item">Lorem, ipsum Perspiciatis obcaecati alias quia distinctio quis</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing </div>
+        <div class="item"> <div class="item">dolor sit amet consectetur adipisicing elit</div></div>
+        <div class="item">item6</div>
+        <div class="item">dolor sit amet consectetur adipisicing elit</div>
+    </div>
+    <p>space-around</p>
+    <div class="container around">
+        <div class="item">Lorem ipsum dolor.</div>
+        <div class="item">Lorem ipsum dolor Rerum aliquid tenetur ipsam id praesentium voluptates </div>
+        <div class="item">Lorem, ipsum Perspiciatis obcaecati alias quia distinctio quis</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing </div>
+        <div class="item"> <div class="item">dolor sit amet consectetur adipisicing elit</div></div>
+        <div class="item">item6</div>
+        <div class="item">dolor sit amet consectetur adipisicing elit</div>
+    </div>
+    <p>space-between</p>
+    <div class="container between">
+        <div class="item">Lorem ipsum dolor.</div>
+        <div class="item">Lorem ipsum dolor Rerum aliquid tenetur ipsam id praesentium voluptates </div>
+        <div class="item">Lorem, ipsum Perspiciatis obcaecati alias quia distinctio quis</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing </div>
+        <div class="item"> <div class="item">dolor sit amet consectetur adipisicing elit</div></div>
+        <div class="item">item6</div>
+        <div class="item">dolor sit amet consectetur adipisicing elit</div>
+    </div>
+</body>
+</html>
