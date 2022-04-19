@@ -1,3 +1,5 @@
+'use strict';
+
 // Create two different functions to test if a string is a palindrome
 let teste="roma me tem amor";
 let teste0=0;
