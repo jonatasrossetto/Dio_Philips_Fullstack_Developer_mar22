@@ -55,4 +55,11 @@ function testArray(matriz, numero){
 }
 
 const matrizTeste = [1,2,3,4,5];
+
+console.log(testArray());
+console.log(testArray(matrizTeste));
+console.log(testArray('a',));
+console.log(testArray('a',1));
+console.log(testArray(matrizTeste,'a'));
 console.log(testArray(matrizTeste,6));
+
