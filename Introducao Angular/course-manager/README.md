@@ -3,6 +3,7 @@ This is a folder to store the project "Course Manager" created during the lectur
 
 29/04/2022a - Added a component to implement a list of courses 
 29/04/2022b - Added the star component to show course rating stars, using font-awesome, it is simply 5* covered by a variable width mask, have to take care about the formula to calculate the rating mask width
+01/05/2022 - Added a filter functionality to filter courses by some string contained in the course name
 
 -----------------------------------------------
 ## CourseManager
