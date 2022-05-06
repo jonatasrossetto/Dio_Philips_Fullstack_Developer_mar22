@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core"
 import { ActivatedRoute } from "@angular/router";
 
+
 @Component({
     templateUrl: './course-info.component.html'
 })
@@ -8,10 +9,11 @@ import { ActivatedRoute } from "@angular/router";
 export class CourseInfoComponent implements OnInit{
 
     courseId: number;
+    
 
     constructor(private activatedRoute: ActivatedRoute) {}
-
+    
     ngOnInit(): void {
-        this.courseId = 1 //+this.activatedRoute.snapshot.paramMap.get('id');
+        this.courseId = +this.activatedRoute.snapshot.paramMap.get('id');
     }
 }
