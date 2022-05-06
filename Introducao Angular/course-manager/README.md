@@ -6,6 +6,7 @@ This is a folder to store the project "Course Manager" created during the lectur
 01/05/2022 - Added a filter functionality to filter courses by some string contained in the course name
 02/05/2022 - Added Pipes to format the release date and course code
 04/05/2022 - Routes were implemented
+05/05/2022 - Some bug in the activatedRoute declaration in course-info.component.ts
 
 -----------------------------------------------
 ## CourseManager
