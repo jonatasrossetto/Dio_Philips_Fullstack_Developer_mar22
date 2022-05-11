@@ -8,6 +8,7 @@ This is a folder to store the project "Course Manager" created during the lectur
 04/05/2022 - Routes were implemented
 05/05/2022 - Some bug in the activatedRoute declaration in course-info.component.ts
 06/05/2022 - the bug in the activatedRoute declaration in course-info.component.ts (error TS2533: Object is possibly 'null' or 'undefined') was solved by editing the tsconfig.json file with the compiler directive "strictNullChecks":false
+11/05/2022 - Implemented the Edit functionality, implemented a node server to run as a backend for the application (the server was given by the instructor)
 
 -----------------------------------------------
 ## CourseManager
