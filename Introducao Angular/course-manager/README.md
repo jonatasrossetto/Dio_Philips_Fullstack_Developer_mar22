@@ -2,12 +2,19 @@
 This is a folder to store the project "Course Manager" created during the lecture about Angular Forms.
 
 29/04/2022a - Added a component to implement a list of courses 
+
 29/04/2022b - Added the star component to show course rating stars, using font-awesome, it is simply 5* covered by a variable width mask, have to take care about the formula to calculate the rating mask width
+
 01/05/2022 - Added a filter functionality to filter courses by some string contained in the course name
+
 02/05/2022 - Added Pipes to format the release date and course code
+
 04/05/2022 - Routes were implemented
+
 05/05/2022 - Some bug in the activatedRoute declaration in course-info.component.ts
+
 06/05/2022 - the bug in the activatedRoute declaration in course-info.component.ts (error TS2533: Object is possibly 'null' or 'undefined') was solved by editing the tsconfig.json file with the compiler directive "strictNullChecks":false
+
 11/05/2022 - Implemented the Edit functionality, implemented a node server to run as a backend for the application (the server was given by the instructor)
 
 -----------------------------------------------
