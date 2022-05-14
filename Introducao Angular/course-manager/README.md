@@ -19,6 +19,8 @@ This is a folder to store the project "Course Manager" created during the lectur
 
 11/05/2022 - Implemented the Delete functionality
 
+13/05/2022 - A course module 'course.module.ts' was implemented to group in the same context the 'course.info' and 'course.service' components.
+
 -----------------------------------------------
 ## CourseManager
 
